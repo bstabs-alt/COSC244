@@ -1,0 +1,33 @@
+import java.io.*;
+
+public class Caesar{
+
+    public static void main(String[] args){
+        InputStream in = System.in;
+        OutputStream out = System.out;
+        int pos = 0;
+        int count = 0;
+
+        //try catch for int if there is an argument.
+        if(args.length > 0){
+            try{
+                pos = Integer.parseInt(args[0]); 
+            } catch(NumberFormatException e){
+                System.out.print(args[0] + "  not an Int");
+                System.exit(1);
+            }
+        }
+
+        try{
+            while((count = in.read()) != 1){
+                count += pos;
+                count %= 256;
+                out.write(count);
+            }
+            out.close();
+        } catch(IOException e){
+            System.out.println("IOException");
+        }
+        
+    }
+}
