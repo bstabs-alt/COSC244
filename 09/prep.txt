@@ -1,0 +1,29 @@
+Q1. synchronised must be used so that client is exclusive when the for loop runs to print the line, otherwise another thread may cause an unpredictable modifcation.
+
+Q2. line 15 start()
+
+Q3. 32 to 37
+
+Q4. chat server started
+
+Q5. accepted connection from client 1
+
+Q6. Welcome! you are client_1
+
+Q7. accepted connection from client 2
+
+Q8. welcome you are client 2
+
+Q9. client_1: Hello from client 1
+
+Q10. client_1: Hello from client 1
+
+Q11.sending 'Hello from client 1' to : [client1, client2, client3]
+
+Q12. client_3 closed connection!
+
+Q13. client_1: wow
+
+Q14. sending 'wow' to : [client_1, client_2]
+
+Q15. client_4

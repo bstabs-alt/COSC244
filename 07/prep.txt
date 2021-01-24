@@ -1,0 +1,25 @@
+Q1 reading in bytes and decoding into character with specififed charset
+
+Q2 wrap inputstream reader within bufferedreader
+   BufferedRead in = new BufferedReader(new InputStreamReader(System.in));
+
+Q3 readLine() returns a string
+
+Q4 println(String x), prints a String then terminates the line, returns void
+
+Q5 ServerSocket(int port), creates server socket, binds to local port number
+
+Q6 accept(), listens and accepts connection made to this socket
+
+Q7 Socket(InetAddress host, int port)
+
+Q8 getInputStream() returns input stream for this socket
+
+Q9 getOutputStream()
+
+Q10 initialises Data object to represent the time at which it was allocated
+
+Q11 Date date = new Date();
+    System.out.print(date);
+
+Q12 <port> [host], port must be known but not host.

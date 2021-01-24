@@ -1,0 +1,3 @@
+Q1 reading in bytes and decoding into character with specififed charset
+Q2 wrap inputstream reader within buffer reader
+   BufferedRead in = new BufferedReader(new InputStreamReader(System.in));

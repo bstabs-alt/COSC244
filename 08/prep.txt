@@ -1,0 +1,31 @@
+Q1 class extends Thread which makes it a subclass of Thread, where the run methof overrides that method for Thread. The instance of subclass can then be alloated.
+class implements Runnable which implements the run method. the nthe method can be passed an an argument when creating Thread.
+
+Q2 run().
+
+Q3 start().
+
+Q4 uses ReadWriteThread instead of an instance of TCPExample, doesnt have send and receive methods.
+
+Q5 14 gets from System.in and makes the starts socket iwth the outputstream
+   15 gets inputstream from socket and starts from System.out
+
+Q6 no because each can start without the other.
+
+Q7
+public class Client {
+  public static void main(String[] args) {
+    try{
+      int port = Integer.parseInt(args[0]);
+      Socket socket = new Socket(args[1], port);
+      System.err.println("Connected to " + args[1] + " on port " + port);
+      new ReadWriteThread(System.in, socket.getOutputStream()).start();
+      new ReadWriteThread(socket.getInputStream(), System.out).start();
+    }catch (Exception e) {
+      e.printStackTrace();
+      System.err.println("\nUsage: java Client <port>");
+    }
+  }
+}
+
+8. mulitple threads are created and one may wake up and pre-exempts another when both are trying to print. 

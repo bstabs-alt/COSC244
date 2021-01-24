@@ -1,0 +1,7 @@
+Q1. prints a line.
+Q2. output stream of the socket.
+Q3. returns the id of String to identify the client.
+Q4. the client number is not recycled as the number continues to increment.
+Q5. 13 creates new ChatServer, 23-30 infinite while waits for connection.
+Q6. 1 3 6
+Q7. 1 thread waiting for client, 3 threads from calling send() for each client, 3 threads for each clients input, and 3 hread sfor each clients output.
