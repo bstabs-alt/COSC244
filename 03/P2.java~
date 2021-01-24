@@ -1,0 +1,21 @@
+import java.lang.*;
+import java.io.*;
+
+public class P2{
+
+    public static void main(String [] args){
+        BufferedReader buffin = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder b = new StringBuilder();
+        String line;
+        try{
+            while(buffin.ready()){
+                line = buffin.readLine();
+                b.append(line);
+        }
+        } catch(IOException e){
+            System.out.println("Error");
+        }
+        System.out.println(b.reverse().toString());
+    }
+    
+}

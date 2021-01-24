@@ -1,0 +1,50 @@
+Q1
+in - The new input stream (InputStream).
+
+Q2
+read();
+
+Q3
+returns abtract int.
+
+Q4
+returns -1 if there is no more data.
+
+Q5
+out - the standard output stream (PrintStream).
+
+Q6
+write(int b);
+
+Q7
+takes int which is the specified byte.
+
+Q8
+InptStream in = System.in;
+OutputStream out = System.out;
+int i;
+try{
+ while((i = in.read()) != -1){
+  out = write(i);
+  }   
+ } catch(Exception e){
+  throw new RuntimeException(e);
+}
+
+Q9
+readLine();
+
+Q10
+returns a String or null if the end ofthe stream is reached.
+
+Q11
+Scanner sc = new Scanner(System.in);
+
+Q12
+hasNextLine();
+
+Q13
+nextLine(); returns a string.
+
+Q14
+next(); but should call hasNext(); first.
